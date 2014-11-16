@@ -91,6 +91,9 @@ public class WordCount {
         String temp=wordList.get(i);
         wordList.set(i,wordList.get(i+1));
         wordList.set(i+1,temp);
+        int tempnum=wordCount.get(i);
+        wordCount.set(i,wordCount.get(i+1));
+        wordCount.set(i+1,tempnum);
         i=-1;
       }
     }
